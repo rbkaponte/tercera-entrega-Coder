@@ -1,0 +1,367 @@
+*{
+    padding: 0;
+    margin: 0;
+box-sizing: border-box;
+}
+body{
+    font-family: 'open sans';
+}
+
+.contenedor{
+    padding: 60px 0;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+.titulo{
+    color: #642a73;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 60px;
+}
+/*header*/
+
+header {
+    width: 100%;
+    height: 600px;
+    background: #bc4e9c;  
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(340, 60%, 44%, 0.63), hsla(317, 45%, 52%, 0.637)), url(../imagenes/presentación.jpg);   
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(340, 60%, 44%, 0.63), hsla(317, 45%, 52%, 0.637)), url(../imagenes/presentación.jpg); 
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+
+}
+nav{
+    text-align: right;
+
+}
+
+nav a{
+    color:#fff;
+    font-weight: 300;
+    text-decoration: none;
+    margin-right: 10px;
+}
+
+nav a:hover{
+    text-decoration: underline;
+}
+.texto-header h1{
+    font-size: 50px;
+    color: #fff;
+    text-align: center;
+}
+.texto-header h2{
+    font-size: 30px;
+    font-weight: 300;
+    color: #fff;
+    text-align: center;
+}
+.wave{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    
+}
+/* Sobre Nosotros de conocenos*/
+.contenedor-sobre-nosotros{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.imagen-sobre-nosotros{
+    width: 48%;
+}
+
+.contenedor-sobre-nosotros.contenido-texto{
+    width: 48%;
+}
+
+.contenido-texto h3{
+    margin-bottom: 20px;
+    padding: 0px 5px 5px 10px;
+    text-align:justify
+}
+.contenido-texto p{
+
+    padding: 0px 0px 30px 15px ;
+    font-weight: 300;
+    text-align: justify;
+}
+
+   /* Portafolio de la pagina conocenos*/
+
+.portafolio{
+    background: #f2f2f2;
+}
+.galeria-port{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-port{
+    width: 24%;
+    height: 200px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0,0, 0, .5);
+}
+.imagen-port img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display:block;
+}
+.hover-galeria{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    transform: scale(0);
+    background:hsla(240, 80%, 46%, 0.7);
+    transition: transform  .5s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.hover-galeria img{
+    width: 100%;
+}
+.hover-galeria p{
+    color: #fff;
+}
+.imagen-port:hover .hover-galeria{
+    transform: scale(1);
+}
+/* Productos destacados de la página papeleria*/
+
+.productos-destacados{
+    background: #f2f2f2;
+}
+.galeria-prod{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.imagen-prod{
+    width: 24%;
+    height: 200px;
+    margin-bottom: 10px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px rgba(0,0, 0, .5);
+}
+.imagen-prod img{
+    height: 70%;
+    display: block;
+    object-fit: cover;
+    margin-left: 50px;
+	margin-right: 50px;
+   
+}
+
+.imagen-prod h4 {
+	font-weight: bold;
+    font-size: 20px;
+	color:#414141;
+    display: block;
+	margin-left: 50px;
+	margin-right: 50px;
+	
+}
+
+.imagen-prod p{
+font-weight: 500;
+color:lightcoral;
+margin-left: 50px;
+margin-right: 50px;
+}
+
+/*clientes de la pagina conocenos*/
+
+.cards{
+    display:flex;
+    justify-content: space-evenly;
+}
+.cards .card{
+    background: #903a6f;
+    display:flex;
+    width: 46%;
+    height: 200px;
+    align-items: center;
+    justify-content: space-evenly;
+    border-radius: 5px;
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.6);
+
+}
+
+.cards .card img{
+    width: 100 px;
+    height: 100px;
+    object-fit: cover;
+    border:3px solid #fff;
+    border-radius: 50%;
+    display: block;
+}
+
+.cards .card .contenido-texto-card{
+    width: 50%;
+    color:#fff;
+}
+.cards .card .contenido-texto-card p{
+    font-weight: 300;
+    padding-top: 5px;
+}
+
+/*Acerca nuestros servicios*/
+.acerca-nuestroservicios{
+    background: #f2f2f2;
+    padding-bottom: 30px;
+
+}
+.servicio-cont{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.servicio-indi{
+    width: 25%;
+    text-align: center;
+}
+
+.servicio-indi img{
+    width: 100%;
+}
+
+.servicio-indi h3{
+    margin: 20px 0 ;
+}
+
+.servicio-indi p{
+font-weight: 300;
+text-align: justify;
+}
+
+/*Footer*/
+
+footer{
+    background: #90065b;
+    padding: 60px 0 30px 0;
+    margin: auto;
+    overflow: hidden;
+}
+
+.contenedor-footer{
+    display:flex;
+    width: 90%;
+    justify-content: space-evenly;
+    margin: auto;
+    padding-bottom: 50px;
+    
+}
+
+.content-foot{
+    text-align: center;
+}
+
+.content-foot h4{
+    color:#fff;
+    border-bottom:3px solid #4cd407;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+.content-foot p{
+    color:#fff;
+}
+/*Media queries*/
+
+@media screen and (max-width: 768px)
+{
+    header{
+        background-position: center;
+    }
+    .contenedor-sobre-nosotros{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contenedor-sobre-nosotros .contenido-texto{
+        width: 90%;
+    }
+    .imagen-sobre-nosotros{
+        width: 90%;
+    }
+    
+
+}
+    /* Hasta 320*/
+
+    @media screen and (max-width: 320px)
+{
+   nav{
+    text-align: center;
+    padding: 30px 0 0 0;
+   }
+
+   nav a{
+    margin-right: 5px;
+
+   }
+   .texto-header h1{
+    font-size: 35px;
+   }
+
+   .texto-header h2{
+    font-size: 20px;
+   }
+    /*Galeria*/
+    .imagen-port{
+     width: 44%;
+    }      
+    /*clientes*/
+    .cards{
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    }
+    .cards .card{
+        width: 90%;
+    }
+    .cards .card:first-child{
+        margin-bottom: 30px;
+    }
+    .servicio-cont{
+        justify-content: center;
+        flex-direction: column;
+
+    }
+    .servicio-indi{
+        width: 100%;
+        text-align: center;
+
+    }
+    .servicio-indi img{
+        width: 90%;
+    }
+    .contenedor-footer{
+        flex-direction: column;
+
+    }
+    .content-foot{
+        margin-bottom: 20px;
+        text-align: centerS;
+    }
+    .content-foot h4{
+        border:none;
+    }
+}

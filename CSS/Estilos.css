@@ -171,7 +171,7 @@ nav a:hover{
 
 .imagen-prod h4 {
 	font-weight: bold;
-    font-size: 20px;
+    font-size: 14px;
 	color:#414141;
     display: block;
 	margin-left: 50px;
@@ -328,6 +328,11 @@ footer{
     .imagen-port{
      width: 44%;
     }      
+    /* Productos destacados de la página papeleria*/
+
+    .imagen-prod{
+        width: 75%;
+    }
     /*clientes*/
     .cards{
     flex-direction:column ;
